@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="specCharacteristics">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="humanReadableId" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="validFor" type="timePeriod" minOccurs="0"/>
+      <xs:element name="valueType" type="xs:string" minOccurs="0"/>
+      <xs:element name="maxCardinality" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="minCardinality" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="purpose" type="xs:string" minOccurs="0"/>
+      <xs:element name="measure" type="xs:string" minOccurs="0"/>
+      <xs:element name="isCalculated" type="xs:boolean"/>
+      <xs:element name="canBeOverriden" type="xs:boolean"/>
+      <xs:element name="configurable" type="xs:boolean"/>
+      <xs:element name="mandatory" type="xs:boolean"/>
+      <xs:element name="classifierTags" type="xs:string" minOccurs="0"/>
+      <xs:element name="valueRegulator" type="xs:string" minOccurs="0"/>
+      <xs:element name="characteristicValues" type="characteristicValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="comprisedOf" type="specCharacteristics" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="characteristicRelationships" type="characteristicRelationship" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="customProperties" type="customProperties" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="value" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

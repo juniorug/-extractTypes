@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="productPrice">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="externalId" type="xs:string" minOccurs="0"/>
+      <xs:element name="versionNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="validFor" type="timePeriod" minOccurs="0"/>
+      <xs:element name="productPriceCharacteristics" type="characteristic" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="statuses" type="status" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="productOfferingPrice" type="productOfferingPrice" minOccurs="0"/>
+      <xs:element name="lockDownDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="comprisedOfRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="comprisedOf" type="specCharacteristics" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="customerAccountsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="customerAccounts" type="customerAccount" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

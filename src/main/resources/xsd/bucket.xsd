@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="bucket">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="externalId" type="xs:string" minOccurs="0"/>
+      <xs:element name="validFor" type="timePeriod" minOccurs="0"/>
+      <xs:element name="bucketCharacteristics" type="characteristic" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="isBCAligned" type="flagValue" minOccurs="0"/>
+      <xs:element name="providerProduct" type="xs:string" minOccurs="0"/>
+      <xs:element name="measure" type="xs:string" minOccurs="0"/>
+      <xs:element name="unitOfMeasure" type="xs:string" minOccurs="0"/>
+      <xs:element name="bucketValue" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="thresholdValues" type="thresholdValue" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:include schemaLocation="library.xsd" />
+
+  <xs:element name="AllowanceUnit" type="allowanceUnit"/>
+
+  <xs:element name="Attachment" type="attachment"/>
+
+  <xs:element name="Bucket" type="bucket"/>
+
+  <xs:element name="Characteristic" type="characteristic"/>
+
+  <xs:element name="CharacteristicCriterion" type="characteristicCriterion"/>
+
+  <xs:element name="CharacteristicRelationship" type="characteristicRelationship"/>
+
+  <xs:element name="CharacteristicValue" type="characteristicValue"/>
+
+  <xs:element name="ConditionalPrices" type="conditionalPrices"/>
+
+  <xs:element name="ContactMedium" type="contactMedium"/>
+
+  <xs:element name="ContractSpecification" type="contractSpecification"/>
+
+  <xs:element name="CustomProperties" type="customProperties"/>
+
+  <xs:element name="CustomerAccount" type="customerAccount"/>
+
+  <xs:element name="CustomerBillingCycle" type="customerBillingCycle"/>
+
+  <xs:element name="DecimalValue" type="decimalValue"/>
+
+  <xs:element name="Discount" type="discount"/>
+
+  <xs:element name="DiscountTargets" type="discountTargets"/>
+
+  <xs:element name="EntityAssociation" type="entityAssociation"/>
+
+  <xs:element name="ErrorMessage" type="errorMessage"/>
+
+  <xs:element name="FlagValue" type="flagValue"/>
+
+  <xs:element name="Images" type="images"/>
+
+  <xs:element name="Medium" type="medium"/>
+
+  <xs:element name="Name" type="name"/>
+
+  <xs:element name="PersonalizedPrice" type="personalizedPrice"/>
+
+  <xs:element name="Price" type="price"/>
+
+  <xs:element name="Product" type="product"/>
+
+  <xs:element name="ProductCategory" type="productCategory"/>
+
+  <xs:element name="ProductOffering" type="productOffering"/>
+
+  <xs:element name="ProductOfferingPrice" type="productOfferingPrice"/>
+
+  <xs:element name="ProductOfferings" type="productOfferings"/>
+
+  <xs:element name="ProductPrice" type="productPrice"/>
+
+  <xs:element name="ProductSpecification" type="productSpecification"/>
+
+  <xs:element name="ProductSpecificationRelationship" type="productSpecificationRelationship"/>
+
+  <xs:element name="RecurrencePeriod" type="recurrencePeriod"/>
+
+  <xs:element name="Resource" type="resource"/>
+
+  <xs:element name="ResourceSpecification" type="resourceSpecification"/>
+
+  <xs:element name="Service" type="service"/>
+
+  <xs:element name="ServiceSpecification" type="serviceSpecification"/>
+
+  <xs:element name="SourceCharacteristicLink" type="sourceCharacteristicLink"/>
+
+  <xs:element name="SpecCharacteristics" type="specCharacteristics"/>
+
+  <xs:element name="Status" type="status"/>
+
+  <xs:element name="TargetCardinality" type="targetCardinality"/>
+
+  <xs:element name="TargetCharacteristicLink" type="targetCharacteristicLink"/>
+
+  <xs:element name="ThresholdValue" type="thresholdValue"/>
+
+  <xs:element name="TimePeriod" type="timePeriod"/>
+
+  <xs:element name="UnitOfMeasure" type="unitOfMeasure"/>
+
+  <xs:element name="ValueRange" type="valueRange"/>
+
+  <xs:element name="VersionedValue" type="versionedValue"/>
+</xs:schema>
+

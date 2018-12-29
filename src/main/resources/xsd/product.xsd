@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="product">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="href" type="xs:string" minOccurs="0"/>
+      <xs:element name="externalId" type="xs:string" minOccurs="0"/>
+      <xs:element name="validFor" type="timePeriod" minOccurs="0"/>
+      <xs:element name="productCharacteristics" type="characteristic" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="statuses" type="status" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="productSerialNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="productOfferings" type="productOffering" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productOfferingsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="lockDownDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="comprisedOfRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="comprisedOf" type="specCharacteristics" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="services" type="service" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="servicesRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="resourcesRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="resources" type="resource" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productBuckets" type="bucket" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="customerAccountsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="customerAccounts" type="customerAccount" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productPrices" type="productPrice" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

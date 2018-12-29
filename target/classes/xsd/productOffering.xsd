@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="productOffering">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="humanReadableId" type="xs:string" minOccurs="0"/>
+      <xs:element name="href" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="offerType" type="xs:string" minOccurs="0"/>
+      <xs:element name="offerSubType" type="xs:string" minOccurs="0"/>
+      <xs:element name="validFor" type="timePeriod" minOccurs="0"/>
+      <xs:element name="productCategory" type="productCategory" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="images" type="images" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="attachment" type="attachment" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="isBundle" type="xs:boolean"/>
+      <xs:element name="productOfferingPrices" type="productOfferingPrice" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="bundledProductOfferingsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productOfferingsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="discountedProductOfferingsRef" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="productSpecification" type="productSpecification" minOccurs="0"/>
+      <xs:element name="product" type="product" minOccurs="0"/>
+      <xs:element name="resources" type="resource" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="services" type="service" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="bundledProductOffering" type="productOffering" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

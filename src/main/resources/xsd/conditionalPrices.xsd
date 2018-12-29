@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="conditionalPrices">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="characteristicCriterion" type="characteristicCriterion" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="concatenatedCharacteristicCriterion" type="xs:string" minOccurs="0"/>
+      <xs:element name="unitOfMeasure" type="unitOfMeasure" minOccurs="0"/>
+      <xs:element name="price" type="price" minOccurs="0"/>
+      <xs:element name="productOfferingPriceAlteration" type="productOfferingPrice" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

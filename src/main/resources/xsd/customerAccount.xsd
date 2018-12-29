@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="customerAccount">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="externalId" type="xs:string" minOccurs="0"/>
+      <xs:element name="validFor" type="timePeriod" minOccurs="0"/>
+      <xs:element name="statuses" type="status" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="names" type="name" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="hierarchicalType" type="xs:string" minOccurs="0"/>
+      <xs:element name="priceTypes" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="paymentContext" type="xs:string" minOccurs="0"/>
+      <xs:element name="customerBillingCycles" type="customerBillingCycle" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="contactMedia" type="contactMedium" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="buckets" type="bucket" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

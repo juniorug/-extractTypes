@@ -1,0 +1,4 @@
+TODO LIST:
+
+# Maybe verify if the field 'description' is already there, if yes do not add again
+# Support "single types", EX: Discount: Price
