@@ -25,3 +25,6 @@ hs_err_pid*
 #RAML files
 *.raml
 *.RAML
+
+#XSD files
+*.xsd
